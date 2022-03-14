@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!--Icono de mi pagina web-->
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/850/PNG/128/Pokeball_icon-icons.com_67448.png" type="image/x-icon">
+
+    <!--Font Styles-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--Scripts js-->
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <!--Ojas de estilos css-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--nombre del sitio web para mostrar al comparir url-->
+    <meta property="og:site_name" content="Pokedex" />
+    <!--titulo del sitio web al compartir el url-->
+    <meta name="title" content="Pokedex">
+    <!--descripcion del sitio-->
+    <meta name="description" content="Hola Bienvenido!!, Aquí aprenderás muchas cosas nuevas respecto a los pokemones">
+    <!--tags del sitio-->
+    <meta data-react-helmet="true" name="keywords" content="Microsoft, tienda, productos,
+    compatibilidad, Xbox One, Xbox 360, juegos, juegos en Windows, Xbox Live, entretenimiento,
+    Star Wars™ Battlefront™, Xbox, comprar, disponible próximamente, nuevo, oferta, paquete,
+    paquete Xbox One S Battlefield 1 Edición Especial, Edición Deluxe de suscriptor temprano, 
+    1&nbsp;TB, accesorios, consolas, Gears of War 4, reservar, NFL en Xbox, NFL, NFL, 
+    sistema de entretenimiento 4K, aficionados de la NFL, jugar, la más confiable, red de juegos, 
+    compatibilidad con versiones anteriores, Xbox Play Anywhere, comunidad, PC Windows 10, juegos de Xbox 360, 
+    características avanzadas, accesorios para Xbox, Xbox Design Lab, personalizar, Control inalámbrico Xbox, 
+    color, Control inalámbrico Xbox Elite, Gears of War 4 Edición Limitada, 
+    Auriculares estéreo Fuerzas armadas de edición especial para Xbox One, 
+    diseña el tuyo, canjear código, eventos, Xbox Wire, ofertas, ofertas especiales">
+    <!--tags del sitio-->
+    <meta name="keywords" content="tech mex, java, microsoft, devops, java, python, Mysql, software, gaming, developer, course, ingeniero, youtube">
+    <!--miniatura de la pagina-->
+    <meta property="og:image" content="https://static.posters.cz/image/750/posters/pokemon-eevee-i32673.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!--miniatura-->
+    <link rel="image_src" href="https://static.posters.cz/image/750/posters/pokemon-eevee-i32673.jpg">
+
+</head>
+
+<body>
+    <!--form to shear a pokemon-->
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off" required placeholder="ingresa un pokemon y da enter">
+
+    </form>
+    <!--carta de datos del pokemon-->
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <!--imagen para casos de // no encontrar pokemon-->
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="img/poke-shadow.png" />
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+</body>
+
+</html>
